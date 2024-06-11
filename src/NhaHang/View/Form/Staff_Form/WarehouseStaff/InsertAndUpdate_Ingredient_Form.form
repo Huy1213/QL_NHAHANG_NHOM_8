@@ -60,46 +60,46 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
                               <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Component id="pic" min="-2" pref="300" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="lbdongia" max="32767" attributes="0"/>
-                                              <Component id="lbDVT" alignment="1" pref="132" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txtdongia" pref="200" max="32767" attributes="0"/>
-                                              <Component id="jComboBoxDVT" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lbtenNL" pref="137" max="32767" attributes="0"/>
-                                              <Component id="lbmaNL" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="txttenNL" min="-2" pref="200" max="-2" attributes="0"/>
-                                              <Component id="txtmaNL" min="-2" pref="201" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                              </Group>
                           </Group>
                           <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="467" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
                   <Component id="cmdOK" min="-2" pref="150" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="324" max="-2" attributes="0"/>
                   <Component id="cmdCancel" min="-2" pref="150" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="135" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lbdongia" max="32767" attributes="0"/>
+                              <Component id="lbDVT" alignment="1" min="-2" pref="132" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtdongia" max="32767" attributes="0"/>
+                              <Component id="jComboBoxDVT" min="-2" pref="200" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbtenNL" pref="403" max="32767" attributes="0"/>
+                              <Component id="lbmaNL" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txttenNL" min="-2" pref="200" max="-2" attributes="0"/>
+                              <Component id="txtmaNL" min="-2" pref="201" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="268" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -110,32 +110,27 @@
                   <Component id="lbTitle" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" pref="2" max="-2" attributes="0"/>
-                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lbmaNL" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="txtmaNL" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lbtenNL" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="txttenNL" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="lbdongia" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="txtdongia" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lbDVT" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="jComboBoxDVT" min="-2" pref="38" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Component id="pic" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbmaNL" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="txtmaNL" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbtenNL" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="txttenNL" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lbdongia" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="txtdongia" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbDVT" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jComboBoxDVT" min="-2" pref="38" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                   <Component id="jSeparator2" min="-2" pref="2" max="-2" attributes="0"/>
                   <EmptySpace pref="50" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -148,17 +143,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="NhaHang.View.Swing.ImageAvatar" name="pic">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Icons/ingredient.jpg"/>
-            </Property>
-          </Properties>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-            <Property name="useNullLayout" type="boolean" value="true"/>
-          </Layout>
-        </Container>
         <Component class="javax.swing.JLabel" name="lbmaNL">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -203,6 +187,9 @@
         </Component>
         <Component class="NhaHang.View.Swing.MyTextField" name="txttenNL">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="65" green="62" red="5d" type="rgb"/>
             </Property>
@@ -254,7 +241,7 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cb" green="b9" red="af" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="65" green="62" red="5d" type="rgb"/>
@@ -267,6 +254,9 @@
         </Component>
         <Component class="NhaHang.View.Swing.MyTextField" name="txtdongia">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="65" green="62" red="5d" type="rgb"/>
             </Property>
@@ -282,7 +272,7 @@
         <Component class="javax.swing.JComboBox" name="jComboBoxDVT">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="e8" green="dd" red="d7" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="16" style="0"/>

@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ImageIcon;
+
 
 public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
 
@@ -27,13 +27,13 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
         if(data==null){
             insert=true;
             lbTitle.setText("Thêm NGUYÊN LIỆU");
-            pic.setIcon(new ImageIcon(getClass().getResource("/Icons/ingredient.jpg")));
+            
             data = new ModelNguyenLieu();
             initID_NL(); 
         }else{
             insert=false;
             lbTitle.setText("Sửa NGUYÊN LIỆU");
-            pic.setIcon(new ImageIcon(getClass().getResource("/Icons/ingredient1.jpg")));
+           
             txtmaNL.setText(data.getId()+"");
             txttenNL.setText(data.getTenNL());
             txtdongia.setText(data.getDonGia()+"");
@@ -56,7 +56,6 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
     private void initComponents() {
 
         bg = new NhaHang.View.Swing.PanelRound();
-        pic = new NhaHang.View.Swing.ImageAvatar();
         lbmaNL = new javax.swing.JLabel();
         lbTitle = new javax.swing.JLabel();
         lbtenNL = new javax.swing.JLabel();
@@ -75,8 +74,6 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
 
         bg.setBackground(new java.awt.Color(247, 247, 247));
 
-        pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ingredient.jpg"))); // NOI18N
-
         lbmaNL.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         lbmaNL.setForeground(new java.awt.Color(89, 89, 89));
         lbmaNL.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -94,6 +91,7 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
         lbtenNL.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lbtenNL.setText("Tên Nguyên Liệu");
 
+        txttenNL.setBackground(new java.awt.Color(204, 204, 204));
         txttenNL.setForeground(new java.awt.Color(93, 98, 101));
         txttenNL.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txttenNL.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
@@ -113,11 +111,12 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
         lbDVT.setText("Đơn Vị Tính");
 
         txtmaNL.setEditable(false);
-        txtmaNL.setBackground(new java.awt.Color(175, 185, 203));
+        txtmaNL.setBackground(new java.awt.Color(204, 204, 204));
         txtmaNL.setForeground(new java.awt.Color(93, 98, 101));
         txtmaNL.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtmaNL.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
 
+        txtdongia.setBackground(new java.awt.Color(204, 204, 204));
         txtdongia.setForeground(new java.awt.Color(93, 98, 101));
         txtdongia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtdongia.setFont(new java.awt.Font("sansserif", 0, 16)); // NOI18N
@@ -127,7 +126,7 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
             }
         });
 
-        jComboBoxDVT.setBackground(new java.awt.Color(215, 221, 232));
+        jComboBoxDVT.setBackground(new java.awt.Color(204, 204, 204));
         jComboBoxDVT.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         jComboBoxDVT.setForeground(new java.awt.Color(83, 105, 118));
         jComboBoxDVT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "g", "kg", "ml", "l" }));
@@ -169,35 +168,35 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgLayout.createSequentialGroup()
                         .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(bgLayout.createSequentialGroup()
-                                .addComponent(pic, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(80, 80, 80)
-                                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(bgLayout.createSequentialGroup()
-                                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(lbdongia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(lbDVT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
-                                        .addGap(29, 29, 29)
-                                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtdongia, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                                            .addComponent(jComboBoxDVT, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGap(1, 1, 1))
-                                    .addGroup(bgLayout.createSequentialGroup()
-                                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(lbtenNL, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
-                                            .addComponent(lbmaNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGap(30, 30, 30)
-                                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txttenNL, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING))
                         .addGap(80, 80, 80))))
             .addGroup(bgLayout.createSequentialGroup()
-                .addGap(467, 467, 467)
+                .addGap(149, 149, 149)
                 .addComponent(cmdOK, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(324, 324, 324)
                 .addComponent(cmdCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 135, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lbdongia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lbDVT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtdongia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBoxDVT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(1, 1, 1))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbtenNL, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+                            .addComponent(lbmaNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(30, 30, 30)
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txttenNL, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(268, 268, 268))
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,26 +205,23 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
                 .addComponent(lbTitle)
                 .addGap(20, 20, 20)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbtenNL, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txttenNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbdongia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtdongia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgLayout.createSequentialGroup()
-                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtmaNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbtenNL, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txttenNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbdongia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtdongia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbDVT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBoxDVT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(pic, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60)
+                    .addComponent(lbDVT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxDVT, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(84, 84, 84)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -299,7 +295,6 @@ public class InsertAndUpdate_Ingredient_Form extends javax.swing.JPanel {
     private javax.swing.JLabel lbdongia;
     private javax.swing.JLabel lbmaNL;
     private javax.swing.JLabel lbtenNL;
-    private NhaHang.View.Swing.ImageAvatar pic;
     private NhaHang.View.Swing.MyTextField txtdongia;
     private NhaHang.View.Swing.MyTextField txtmaNL;
     private NhaHang.View.Swing.MyTextField txttenNL;

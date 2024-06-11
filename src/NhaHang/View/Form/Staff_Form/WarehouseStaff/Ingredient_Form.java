@@ -110,7 +110,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbTitle = new javax.swing.JLabel();
         txtSearch = new NhaHang.View.Swing.MyTextField();
         lbTong = new javax.swing.JLabel();
         txtTong = new NhaHang.View.Swing.MyTextField();
@@ -123,12 +122,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
         cmdDelete = new NhaHang.View.Swing.Button();
 
         setBackground(new java.awt.Color(247, 247, 247));
-
-        lbTitle.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        lbTitle.setForeground(new java.awt.Color(108, 91, 123));
-        lbTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/food.png"))); // NOI18N
-        lbTitle.setText("Quản lý Nguyên Liệu");
-        lbTitle.setIconTextGap(10);
 
         txtSearch.setPrefixIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/loupe (1).png"))); // NOI18N
         txtSearch.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -187,7 +180,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
 
         cmdAdd.setBackground(new java.awt.Color(108, 91, 123));
         cmdAdd.setForeground(new java.awt.Color(255, 255, 255));
-        cmdAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/plus.png"))); // NOI18N
         cmdAdd.setText("THÊM NLIỆU");
         cmdAdd.setFocusable(false);
         cmdAdd.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -195,7 +187,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
 
         cmdUpdate.setBackground(new java.awt.Color(108, 91, 123));
         cmdUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        cmdUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/change.png"))); // NOI18N
         cmdUpdate.setText("SỬA NLIỆU");
         cmdUpdate.setFocusable(false);
         cmdUpdate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -203,7 +194,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
 
         cmdDelete.setBackground(new java.awt.Color(108, 91, 123));
         cmdDelete.setForeground(new java.awt.Color(255, 255, 255));
-        cmdDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/bin (1).png"))); // NOI18N
         cmdDelete.setText("XÓA NLIỆU");
         cmdDelete.setFocusable(false);
         cmdDelete.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -216,43 +206,43 @@ public class Ingredient_Form extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 840, Short.MAX_VALUE)
-                    .addComponent(jSeparator2)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lbTong, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(50, 50, 50)
-                                .addComponent(txtTong, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lbTitle)
-                            .addComponent(lbNL))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 843, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(cmdAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
                         .addComponent(cmdDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
-                        .addComponent(cmdUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmdUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbNL)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lbTong, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtTong, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbTong, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTong, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 1, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addGap(14, 14, 14)
                 .addComponent(lbNL)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 1, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmdAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmdUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmdDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -280,7 +270,6 @@ public class Ingredient_Form extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lbNL;
-    private javax.swing.JLabel lbTitle;
     private javax.swing.JLabel lbTong;
     private NhaHang.View.Swing.Table tableNL;
     private NhaHang.View.Swing.MyTextField txtSearch;
